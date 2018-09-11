@@ -38,12 +38,7 @@ def reformat_languages(languages)
       new_hash[language] = data
       new_hash[language][:style] = []
       new_hash[language][:style] << style
-      
-    
     end
   end 
-    puts new_hash
-    binding.pry
   return new_hash
 end
-reformat_languages(languages)
