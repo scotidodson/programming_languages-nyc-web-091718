@@ -40,7 +40,7 @@ def reformat_languages(languages)
     hash.each do |language, data|
       new_hash[language] = data
       if oo_languages.include?(language) && functional_languages.include?(language)
-        new_hash[language][:style] << [:ooo, :functional]
+        new_hash[language][:style] << [:oo, :functional]
       else
         new_hash[language][:style] = []
         new_hash[language][:style] << style
