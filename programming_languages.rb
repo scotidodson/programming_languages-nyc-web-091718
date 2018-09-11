@@ -34,7 +34,7 @@ languages = {
 def reformat_languages(languages)
   languages.each do |language, hash|
     hash.each do |attribute, data|
-      puts data
+    puts language
     binding.pry
     end
   end 
