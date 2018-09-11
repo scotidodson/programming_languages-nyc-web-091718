@@ -34,9 +34,11 @@ languages = {
 def reformat_languages(languages)
   new_hash = {}
   languages.each do |style, hash|
+    puts style
+    binding.pry
     hash.each do |language, data|
       new_hash[language] = data
-      if languages[:ooo][language] == languages[:functional][language]
+      #if languages[:ooo][language] == languages[:functional][language]
         new_hash[language][:style] << [:ooo, :functional]
       else
         new_hash[language][:style] = []
