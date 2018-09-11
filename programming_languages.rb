@@ -40,10 +40,10 @@ def reformat_languages(languages)
       new_hash[language] = data
       #if languages[:ooo][language] == languages[:functional][language]
         new_hash[language][:style] << [:ooo, :functional]
-      else
+      #else
         new_hash[language][:style] = []
         new_hash[language][:style] << style
-      end 
+      #end 
     end
   end 
   return new_hash
