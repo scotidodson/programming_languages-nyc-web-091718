@@ -40,8 +40,9 @@ def reformat_languages(languages)
       
       if languages[:ooo].keys.include?(language) && languages[:functional].keys.include?(language)
         new_hash[language][:style] << :ooo, :functional
-      
-      new_hash[language][:style] << style
+      else
+        new_hash[language][:style] << style
+      end 
     end
   end 
   return new_hash
