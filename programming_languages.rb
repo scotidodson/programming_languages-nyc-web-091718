@@ -39,6 +39,8 @@ def reformat_languages(languages)
   languages.each do |style, hash|
     hash.each do |language, data|
       new_hash[language] = data
+      puts new_hash
+      binding.pry
       if oo_languages.include?(language) && functional_languages.include?(language)
         new_hash[language][:style] << [:oo, :functional]
       else
