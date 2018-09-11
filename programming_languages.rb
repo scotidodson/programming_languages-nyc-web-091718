@@ -36,10 +36,10 @@ def reformat_languages(languages)
   languages.each do |style, hash|
     hash.each do |language, data|
       new_hash[language] = {:type => language[:type], :style => []}
-    puts language
-    binding.pry
+    
     end
-  end 
+  end puts language
+    binding.pry
   return new_hash
 end
 reformat_languages(languages)
