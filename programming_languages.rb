@@ -48,3 +48,4 @@ def reformat_languages(languages)
   end 
   return new_hash
 end
+reformat_languages(languages)
