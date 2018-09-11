@@ -34,7 +34,7 @@ languages = {
 def reformat_languages(languages)
   new_hash = {}
   oo_languages = languages[:oo].keys
-  functional_languages = languages(:functional).keys
+  functional_languages = languages[:functional].keys
   
   languages.each do |style, hash|
     hash.each do |language, data|
@@ -47,6 +47,7 @@ def reformat_languages(languages)
       end 
     end
   end 
-  return new_hash
+  puts new_hash
+  binding.pry
 end
 reformat_languages(languages)
