@@ -42,7 +42,7 @@ def reformat_languages(languages)
       puts new_hash
       binding.pry
       if oo_languages.include?(language) && functional_languages.include?(language)
-        new_hash[language][:style] << [:oo, :functional]
+        new_hash[language][:style] = [:oo, :functional]
       else
         new_hash[language][:style] = []
         new_hash[language][:style] << style
