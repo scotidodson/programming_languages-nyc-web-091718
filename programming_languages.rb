@@ -38,7 +38,8 @@ def reformat_languages(languages)
       new_hash[language] = {:type => language[:type], :style => []}
     
     end
-  end puts language
+  end 
+    puts new_hash
     binding.pry
   return new_hash
 end
