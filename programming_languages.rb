@@ -35,7 +35,8 @@ def reformat_languages(languages)
   new_hash = {}
   languages.each do |style, hash|
     hash.each do |language, data|
-      new_hash[language] 
+      new_hash[language] = data
+      new_hash[language] = 
     
     end
   end 
