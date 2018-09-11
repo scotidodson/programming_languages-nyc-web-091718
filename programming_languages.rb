@@ -37,3 +37,4 @@ def reformat_languages(languages)
     binding.pry 
   end 
 end
+reformat_languages(languages)
