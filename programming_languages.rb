@@ -49,4 +49,3 @@ def reformat_languages(languages)
   end 
   returnnew_hash
 end
-reformat_languages(languages)
