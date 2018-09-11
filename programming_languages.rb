@@ -36,7 +36,7 @@ def reformat_languages(languages)
   languages.each do |style, hash|
     hash.each do |language, data|
       new_hash[language] = data
-      if languages[:ooo].keys.include?(language) && languages[:functional].keys.include?(language)
+      if languages[:ooo][language] == languages[:functional][language]
         new_hash[language][:style] << [:ooo, :functional]
       else
         new_hash[language][:style] = []
